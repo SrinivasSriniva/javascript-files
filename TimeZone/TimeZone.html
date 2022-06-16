@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="TimeZone.css" />
+  </head>
+  <body>
+    <div class="timezone">
+      <label>Select the country to display the time</label>
+
+      <select id="timezone" name="countrytime">
+        <option value="UTC-7">us-pacific time</option>
+        <option value="UTC-6">Mountain Standard Time (US)</option>
+        <option value="UTC-5">Central Standard Time (US)</option>
+        <option value="UTC-4">Eastern Time Zone (US)</option>
+        <option value="UTC-3">Rio De Janeiro - brazil</option>
+        <option value="UTC-2">Coordinated Universal Time</option>
+        <option value="UTC+1">British Summer Time (London)</option>
+        <option value="UTC+2">Central European SummerTime (Berlin)</option>
+        <option value="UTC+3">Moscow Standard Time(Moscow)</option>
+        <option value="UTC+4">United Arad Emirates</option>
+        <option value="UTC+5:30">Indian Standard Time(Mumbai)</option>
+        <option value="UTC+8">Singapore StandardTime</option>
+        <option value="UTC+8">Central Standard Time(Beijing)</option>
+        <option value="UTC+9">Japan Standard Time(Tokyo)</option>
+        <option value="UTC+10">
+          Australian Eastern Standard Time(Sydney,AUS)
+        </option>
+        <option value="UTC+12">New zealand Standard Time(Auckland,NZ)</option>
+      </select>
+      <button class="button" onclick="getTime()">Get Time</button>
+      <br />
+      <span id="tresult"></span>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/1.25.0/luxon.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script> -->
+  </body>
+  <script src="TimeZone.js"></script>
+</html>
